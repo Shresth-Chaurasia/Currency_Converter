@@ -7,3 +7,7 @@
 2.	Implemented real-time exchange rate fetching using an external API for accurate currency conversions.
 3.	Added swap functionality to quickly interchange source and target currencies.
 4.	Supported multiple global currencies to cater to a diverse user base.
+
+### Tools Used:
++ React.js
++ API Integration
