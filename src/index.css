@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("bg.png") #030728 no-repeat center;
+}
+
+/* #root{
+  width: auto;
+} */
+
+.converter-title{
+  margin-top: 25px;
+  text-align: center;
+  padding: 15px 52px;
+}
+
+.currencyConverter{
+  color: white;
+  border: 1px solid rgb(141, 136, 136);
+  max-width: 500px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+}
+
+.converter-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+}
+
+.form-label{
+  font-size: medium;
+  font-weight: 500;
+}
+
+.form-input{
+  width: 320px;
+  height: 40px;
+  margin-top: 8px;
+  background-color: rgba(58, 58, 58, 0.185);
+  border: none;
+  outline: 1px solid rgb(102, 102, 102);
+  color: white;
+  font-size: large;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 5px;
+}
+
+.form-currency-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-section label{
+  font-size: medium;
+  font-weight: 500;
+}
+
+.swap-icon{
+  margin-top: 25px;
+  margin-left: 33px;
+  margin-right: 33px;
+  /* width: 50px;
+  height: 10px;
+  border: 2px solid red; */
+}
+
+.swap-icon svg{
+  outline: 1px solid gray;
+  padding: 7px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.swap-icon:hover{
+  background-color: rgba(85, 85, 85, 0.342);
+  border-radius: 100%;
+}
+
+.currency-select{
+  max-width: 120px;
+  max-height: 40px;
+  background-color: rgba(58, 58, 58, 0.185);
+  outline: 1px solid rgb(102, 102, 102);
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 0;
+  padding: 8px 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.currency-dropdown{
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+  color: white;
+}
+
+.currency-dropdown option{
+  color: black;
+  font-weight: 500;
+}
+
+.submit-button{
+  margin-top: 25px;
+  width: 320px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all;
+  transition-timing-function: ease-out;
+  transition-duration: 200ms;
+}
+
+.submit-button:hover{
+  background-color: rgba(204, 204, 204, 0.733);
+}
+
+.exchange-rate-result{
+  width: 320px;
+  height: 50px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+  margin-top: 30px;
+  background-color: rgba(58, 58, 58, 0.185);
+  border-radius: 5px;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 0 10px;
+  }
+  .currency-converter {
+    padding: 30px 20px 40px;
+  }
+}
